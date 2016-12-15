@@ -1,0 +1,30 @@
+* Possible Projects to Work on With Zoë
+** Reverse engineer ESPN app ~ 16 hrs
++ make use of mitmproxy to find out what their network comunication entails
++ Use this as a base http://www.shubhro.com/2014/12/18/reverse-engineering-kayak-mitmproxy/
++ Can be done using python and javascript
+
+** Mock up an on off temperature regulator base microcontroler ~ 10 hrs
++ Create a bootloader using the arduino
++ Use the AVR mega or tiny to record temperature and pass out a switch when a temperature passes a certain threshold
++ Can also implement sd backup for temperature recording throughout the day
+
+** Clean up compression code for ECG signals ~ 30 hrs
++ Revisit the 5 compression methods used to shrink ECG files
++ Reimplement the fourier compression method in C (rather than python)
++ Clean up huffman code creation
++ Better documentation of code
++ Create rest or soap api for submitting uncompressed signal for compression and uncompressing compressed code
++ Implement a series of additional peak detection methods
+
+** Write a controller for a toy mag lev system ~ 40 hrs
++ create a model of a maglev system and with one input and one output
++ input:  current to electro magnet
++ output: Ultrasound signal that can be translated to height of the object
++ Write a linear controller for the model 1 in analog, 2 in digital
++ We can assemble a simple mag lev system as well, though ordering the parts may take time
+
+** Implement a massively parallel set of image processing tools ~ 20 hrs
++ Use OpenCL, MPI or OpenML to implement a map reduce style fourier transform that can be applied to images of various formats.
++ Also implement a set of complex filters that can be applied to the frequency signal of the data.
++ Try and support both vector (SVG) and raster (BMP) images
